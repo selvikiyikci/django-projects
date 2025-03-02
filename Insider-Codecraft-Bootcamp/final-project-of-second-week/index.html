@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>    
+    <title>Gerçek Zamanlı Görev Yönetim Uygulaması</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Gerçek Zamanlı Görev Yönetim Uygulaması 📝</h2>
+      <input type="text" id="task-title" placeholder="Görev Başlığı" required />
+      <textarea
+        id="task-desc"
+        placeholder="Görev Açıklaması (Opsiyonel)"
+      ></textarea>
+
+      <select id="task-priority">
+        <option value="">Öncelik Seçiniz</option>
+        <option value="Düşük">Düşük</option>
+        <option value="Orta">Orta</option>
+        <option value="Yüksek">Yüksek</option>
+      </select>
+
+      <button id="add-task" style="background: #28a745; color: white">
+        Ekle
+      </button>
+      <button id="filter-completed" style="background: #007bff; color: white">
+        Tamamlananları Göster
+      </button>
+      <button id="sort-priority" style="background: #6c757d; color: white">
+        Önceliğe Göre Sırala
+      </button>
+      <ul id="task-list"></ul>
+    </div>
+  </body>
+</html>
